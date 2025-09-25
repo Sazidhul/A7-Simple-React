@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Apple iPhone 14 Pro Max",
+    "description": "Brand new Apple iPhone 14 Pro Max, 256GB, Deep Purple.",
+    "currentBidPrice": 1125.00,
+    "timeLeft": "2h 15m",
+    "bidsCount": 12,
+    "image": "https://res.cloudinary.com/dfbwnhqmy/image/upload/v1758817909/Bid1-min_xk7huo.png"
+  },
+  {
+    "id": 2,
+    "title": "Dell XPS 13 Laptop",
+    "description": "13-inch ultrabook, 11th Gen Intel Core i7, 16GB RAM, 512GB SSD.",
+    "currentBidPrice": 899.99,
+    "timeLeft": "5h 45m",
+    "bidsCount": 8,
+    "image": "https://res.cloudinary.com/dfbwnhqmy/image/upload/v1758817965/Bid2-min_urxc5a.png"
+  },
+  {
+    "id": 3,
+    "title": "Canon EOS R7 Camera",
+    "description": "Canon EOS R7 Mirrorless Camera with 18-150mm Lens Kit.",
+    "currentBidPrice": 1450.50,
+    "timeLeft": "1d 3h",
+    "bidsCount": 17,
+    "image": "https://res.cloudinary.com/dfbwnhqmy/image/upload/v1758817964/Bid3-min_p7r3yz.png"
+  },
+  {
+    "id": 4,
+    "title": "PlayStation 5 Console",
+    "description": "Sony PlayStation 5 Disc Version, White color, includes controller.",
+    "currentBidPrice": 520.00,
+    "timeLeft": "3h 20m",
+    "bidsCount": 23,
+    "image": "https://res.cloudinary.com/dfbwnhqmy/image/upload/v1758817963/Bid5-min_gjp8p6.png"
+  },
+  {
+    "id": 5,
+    "title": "Rolex Submariner Watch",
+    "description": "Authentic Rolex Submariner, Stainless Steel, Black Dial.",
+    "currentBidPrice": 8400.00,
+    "timeLeft": "4d 10h",
+    "bidsCount": 6,
+    "image": "https://res.cloudinary.com/dfbwnhqmy/image/upload/v1758817965/Bid2-min_urxc5a.png"
+  },
+  {
+    "id": 6,
+    "title": "Electric Mountain Bike",
+    "description": "E-MTB with 500W motor, 21-speed Shimano gears, 48V battery.",
+    "currentBidPrice": 1300.00,
+    "timeLeft": "12h 5m",
+    "bidsCount": 14,
+    "image": "https://res.cloudinary.com/dfbwnhqmy/image/upload/v1758817962/Bid6-min_cymbzy.png"
+  },
+  {
+    "id": 7,
+    "title": "Electric Mountain Bike",
+    "description": "E-MTB with 500W motor, 21-speed Shimano gears, 48V battery.",
+    "currentBidPrice": 1300.00,
+    "timeLeft": "12h 5m",
+    "bidsCount": 14,
+    "image": "https://res.cloudinary.com/dfbwnhqmy/image/upload/v1758817962/Bid7-min_cvdarf.png"
+  }
+]
