@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../Card/Card';
 
 const Blogs = () => {
 
@@ -16,7 +17,12 @@ const Blogs = () => {
 
    return (
       <div>
-         
+         <h1>total: {blogs.length}</h1>
+         <div>
+            {
+               blogs.map((items)=> <Card></Card>)
+            }
+         </div>
       </div>
    );
 };
