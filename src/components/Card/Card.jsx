@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 const Card = ({card}) => {
    console.log(card)
@@ -15,7 +16,7 @@ const Card = ({card}) => {
   <h3>${card.currentBidPrice}</h3>
   <p>{card.timeLeft}</p>
   <div className="justify-self-end">
-    <button className="btn btn-primary">Watch</button>
+    <MdOutlineFavoriteBorder size={25} />
   </div>
 </div>
 
