@@ -20,7 +20,7 @@ const Blogs = () => {
          <h1>total: {blogs.length}</h1>
          <div>
             {
-               blogs.map((items)=> <Card></Card>)
+               blogs.map((items)=> <Card card={items}></Card>)
             }
          </div>
       </div>
