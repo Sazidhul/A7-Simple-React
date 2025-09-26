@@ -30,7 +30,7 @@ function App() {
         </div>
 
         <div className="right-container w-[30%] list bg-base-400 rounded-box shadow-lg">
-          <h1 className='text-center font-bold text-4xl text-blue-950'>Favorite Items</h1>
+          <h1 className='text-center font-bold text-4xl text-blue-950'> Favorite Items</h1>
         </div>
       </div>
 

@@ -4,7 +4,22 @@ const Card = ({card}) => {
    console.log(card)
    return (
       <div>
-         <h1>{card.id} Hi sanikingsrs</h1>
+      <div className="card card-side bg-base-100 shadow-sm  gap-4 mb-5">
+  <figure>
+    <img className='w-[150px] h-[150px] overflow-hidden rounded-md '
+      src={card.image}
+      alt="Movie" />
+  </figure>
+ <div className="grid grid-cols-4 items-center gap-7 w-full">
+  <h2 className="font-bold">{card.title}</h2>
+  <h3>${card.currentBidPrice}</h3>
+  <p>{card.timeLeft}</p>
+  <div className="justify-self-end">
+    <button className="btn btn-primary">Watch</button>
+  </div>
+</div>
+
+</div>
       </div>
    );
 };
