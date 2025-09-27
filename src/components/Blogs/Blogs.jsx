@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 
-const Blogs = ({handleBookMark}) => {
+const Blogs = ({handleBookMark,handleMarkAsRead}) => {
 
       // Now we have to store the data by using useState
        const[blogs, setBlogs] = useState([])
@@ -21,13 +21,13 @@ const Blogs = ({handleBookMark}) => {
              <h1 className='justify-self-center-'>Items</h1>
              <h1 className='justify-self-center'>Current</h1>
              <h1 className='justify-self-center'>Time Left</h1>
-             <h1 className='justify-self-end'>Bid Now</h1>
+             <h1 className='justify-self-center'>Bid Now</h1>
 
          </div>
         
-         <div>
+         <div >
             {
-               blogs.map((items)=> <Card card={items} handleBookMark={handleBookMark}></Card>)
+            blogs.map((items)=> <Card card={items} handleBookMark={handleBookMark} handleMarkAsRead={handleMarkAsRead}></Card>)
             }
          </div>
       </div>
