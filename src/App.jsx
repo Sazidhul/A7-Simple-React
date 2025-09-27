@@ -14,8 +14,24 @@ function App() {
     // store data by useState
   const [bookmarked, setBookmarked] = useState([]);
 
+    // add the Card
   const handleBookMark = (card) =>{
+    const isExist = bookmarked.find(item => item.id == card.id);
+    // console.log(isExist);
+    if(!isExist){
       setBookmarked([...bookmarked,card])
+    }
+    else{
+        alert("already Existed")
+    }
+      
+  };
+
+  // Delete the card 
+  const handleDelete = (id)=>{
+    console.log(id);
+    const newCart = bookmarked.filter(item=> item.id !=id);
+    setBookmarked(newCart);
   }
  
   return (
@@ -47,7 +63,7 @@ function App() {
           </div>
 
           {
-            bookmarked.map((marked)=> <FavCard FavCard={marked}> </FavCard>)
+            bookmarked.map((marked)=> <FavCard FavCard={marked} handleDelete={handleDelete}> </FavCard>)
 
           }
           
