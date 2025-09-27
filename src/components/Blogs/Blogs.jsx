@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 
-const Blogs = () => {
+const Blogs = ({handleBookMark}) => {
 
       // Now we have to store the data by using useState
        const[blogs, setBlogs] = useState([])
@@ -13,14 +13,21 @@ const Blogs = () => {
       .then((data)=> setBlogs(data))
    },[])
 
-   console.log(blogs)
+   // console.log(blogs)
 
    return (
       <div>
-         <h1>total: {blogs.length}</h1>
+         <div className='grid grid-cols-4 items-center gap-7 w-full '>
+             <h1 className='justify-self-center-'>Items</h1>
+             <h1 className='justify-self-center'>Current</h1>
+             <h1 className='justify-self-center'>Time Left</h1>
+             <h1 className='justify-self-end'>Bid Now</h1>
+
+         </div>
+        
          <div>
             {
-               blogs.map((items)=> <Card card={items}></Card>)
+               blogs.map((items)=> <Card card={items} handleBookMark={handleBookMark}></Card>)
             }
          </div>
       </div>

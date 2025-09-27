@@ -7,8 +7,16 @@ import Banner from './components/Navbar/Banner'
 import Blogs from './components/Blogs/Blogs'
 
 import { MdOutlineFavoriteBorder } from "react-icons/md";
+import FavCard from './components/Card/FavCard'
 
 function App() {
+
+    // store data by useState
+  const [bookmarked, setBookmarked] = useState([]);
+
+  const handleBookMark = (card) =>{
+      setBookmarked([...bookmarked,card])
+  }
  
   return (
     <>
@@ -27,7 +35,7 @@ function App() {
       <div className="main-container  flex  w-11/12 mx-auto mt-10 justify-around gap-8">
         <div className="left-container w-[70%]  list bg-base-100 rounded-box shadow-md">
              
-               <Blogs></Blogs>
+               <Blogs handleBookMark={handleBookMark}></Blogs>
              
         </div>
 
@@ -37,6 +45,11 @@ function App() {
           <h1 className='text-center font-bold text-4xl text-blue-950'> 
              Favorite Items</h1>
           </div>
+
+          {
+            bookmarked.map((marked)=> <FavCard FavCard={marked}> </FavCard>)
+
+          }
           
         </div>
       </div>
